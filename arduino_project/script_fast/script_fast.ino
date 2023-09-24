@@ -45,7 +45,7 @@ void setup() {
 // По итогу оставляет пин выключенным
 // pin_number -- номер пина на Arduino
 void blindPin(int pin_number) {
-  for (int i = 0; i <= 6; i++) {
+  for (int i = 0; i <= 3; i++) {
     digitalWrite(pin_number, HIGH);
     delay(250);
     digitalWrite(pin_number, LOW);
@@ -67,7 +67,7 @@ void stepOne() {
   digitalWrite(YELLOW_TWO, LOW);
   digitalWrite(RED_TWO, LOW);
 
-  delay(20000);
+  delay(2000);
 }
 
 
@@ -97,7 +97,7 @@ void stepFour() {
   digitalWrite(RED_TWO, HIGH);
   digitalWrite(YELLOW_TWO, LOW);
 
-  delay(20000);
+  delay(2000);
 }
 
 
@@ -121,7 +121,7 @@ void stepSix() {
 void stepSeven() {
   digitalWrite(RED_ONE, HIGH);
   digitalWrite(YELLOW_ONE, LOW);
-  delay(15000);
+  delay(1500);
 }
 
 
